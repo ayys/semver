@@ -8,7 +8,7 @@
 mod util;
 
 use crate::util::*;
-use semver::Prerelease;
+use semver_eq::Prerelease;
 
 #[test]
 fn test_new() {

@@ -7,7 +7,7 @@
 mod util;
 
 use crate::util::*;
-use semver::{BuildMetadata, Prerelease, Version};
+use semver_eq::{BuildMetadata, Prerelease, Version};
 
 #[test]
 fn test_parse() {

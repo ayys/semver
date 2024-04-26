@@ -1,5 +1,5 @@
 [package]
-name = "semver"
+name = "semver-eq"
 version = "1.0.22"
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 categories = ["data-structures", "no-std"]

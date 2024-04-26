@@ -24,7 +24,7 @@ semver = "1.0"
 ## Example
 
 ```rust
-use semver::{BuildMetadata, Prerelease, Version, VersionReq};
+use semver_eq::{BuildMetadata, Prerelease, Version, VersionReq};
 
 fn main() {
     let req = VersionReq::parse(">=1.2.3, <1.8.0").unwrap();

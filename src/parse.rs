@@ -9,7 +9,7 @@ use core::str::FromStr;
 /// # Example
 ///
 /// ```
-/// use semver::Version;
+/// use semver_eq::Version;
 ///
 /// fn main() {
 ///     let err = Version::parse("1.q.r").unwrap_err();
@@ -155,7 +155,7 @@ impl Error {
 }
 
 impl Op {
-    const DEFAULT: Self = Op::Caret;
+    const DEFAULT: Self = Op::Exact;
 }
 
 fn numeric_identifier(input: &str, pos: Position) -> Result<(u64, &str), Error> {

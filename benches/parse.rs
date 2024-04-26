@@ -2,7 +2,7 @@
 
 extern crate test;
 
-use semver::{Prerelease, Version, VersionReq};
+use semver_eq::{Prerelease, Version, VersionReq};
 use test::{black_box, Bencher};
 
 #[bench]

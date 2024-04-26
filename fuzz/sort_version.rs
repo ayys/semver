@@ -1,7 +1,7 @@
 #![no_main]
 
 use libfuzzer_sys::fuzz_target;
-use semver::{BuildMetadata, Prerelease, Version};
+use semver_eq::{BuildMetadata, Prerelease, Version};
 use std::str;
 
 fuzz_target!(|bytes: &[u8]| {

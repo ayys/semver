@@ -17,7 +17,7 @@
 //! # Example
 //!
 //! ```
-//! use semver::{BuildMetadata, Prerelease, Version, VersionReq};
+//! use semver_eq::{BuildMetadata, Prerelease, Version, VersionReq};
 //!
 //! fn main() {
 //!     let req = VersionReq::parse(">=1.2.3, <1.8.0").unwrap();
@@ -383,7 +383,7 @@ impl Version {
     /// Equivalent to:
     ///
     /// ```
-    /// # use semver::{BuildMetadata, Prerelease, Version};
+    /// # use semver_eq::{BuildMetadata, Prerelease, Version};
     /// #
     /// # const fn new(major: u64, minor: u64, patch: u64) -> Version {
     /// Version {
@@ -440,7 +440,7 @@ impl Version {
     /// # Example
     ///
     /// ```
-    /// use semver::Version;
+    /// use semver_eq::Version;
     ///
     /// let mut versions = [
     ///     "1.20.0+c144a98".parse::<Version>().unwrap(),

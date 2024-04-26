@@ -1,14 +1,14 @@
 #![cfg(test_node_semver)]
 
-use semver::Version;
+use semver_eq::Version;
 use std::fmt::{self, Display};
 use std::process::Command;
 
 #[derive(Default, Eq, PartialEq, Hash, Debug)]
-pub(super) struct VersionReq(semver::VersionReq);
+pub(super) struct VersionReq(semver_eq::VersionReq);
 
 impl VersionReq {
-    pub(super) const STAR: Self = VersionReq(semver::VersionReq::STAR);
+    pub(super) const STAR: Self = VersionReq(semver_eq::VersionReq::STAR);
 
     pub(super) fn matches(&self, version: &Version) -> bool {
         let out = Command::new("node")
